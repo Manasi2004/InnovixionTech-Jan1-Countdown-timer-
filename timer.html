@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Countdown Timer</title>
+  <link rel="stylesheet" href="Timer_style.css">
+</head>
+<body>
+
+<div class="countdown-container">
+  <input type="text" id="eventName" placeholder="Event Name">
+  <input type="datetime-local" id="countdownDate" />
+  <div id="timer" class="countdown-timer">
+    Countdown Timer
+  </div>
+  <div class="button-container">
+    <button onclick="startCountdown()">Start</button>
+    <button onclick="stopCountdown()">Stop</button>
+    <button onclick="resetCountdown()">Reset</button>
+    <button onclick="saveEvent()">Save Event</button>
+  </div>
+  <div id="savedEvents" class="saved-events">
+    
+  </div>
+</div>
+
+<script src="timer.js"></script>
+</body>
+</html>
